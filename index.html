@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" der="ltr">
+
+<head>
+    <title> Khaled Portfolio </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myprofilo.css">
+    <style>
+        .ar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="switchLang">عربي</button>
+
+    <div class="header-container">
+        <h1 class="en">Welcome to my Portfolio</h1>
+        <h1 class="ar">مرحبا بكم في معرض أعمال خالد</h1>
+    </div>
+
+    <p class="en">👋 Hi, I’m Khaled</p>
+
+    <p class="en"> I am a first-year Information Technology (IT) student, passionate about programming and web
+        development and creating software that can benefit the world and the community.</p>
+
+    <p class="en">I have studied C++, which helped me build a strong foundation in problem-solving and logical thinking.
+        I also work with HTML and CSS, and I am currently developing my skills in JavaScript and Python.</p>
+
+    <p class="en">I believe that programming is a powerful tool for positive change. I aim to build simple, clean, and
+        user-friendly applications that solve real problems.</p>
+
+    <p class="en">My goal — God willing — is to become a Software Engineer and contribute meaningful solutions that make
+        a difference.</p>
+
+    <p class="en">📌 This website is a showcase of my projects and code, where I share what I learn and build throughout
+        my journey in Information Technology.</p>
+
+
+    <p class="ar">👋 مرحبًا، أنا خالد </p>
+
+    <p class="ar">طالب حاسبات ومعلومات (IT) في السنة الأولى، مهتم بتعلم البرمجة وتطوير الويب وصناعة برامج تفيد العالم
+        والمجتمع.,</p>
+
+    <p class="ar">درست C++ وبنيت بيه أساس قوي في التفكير البرمجي وحل المشكلات، وبدأت رحلتي في تطوير الويب باستخدام HTML
+        و CSS، وحاليًا بشتغل على تطوير مهاراتي في JavaScript و Python.</p>
+
+    <p class="ar"> بؤمن إن البرمجة أداة للتغيير، وبسعى إني أطور برامج تكون مفيدة، بسيطة، وسهلة الاستخدام. هدفي — بإذن
+        الله — إني أكون Software Engineer قادر أقدم حلول حقيقية تخدم الناس والمجتمع.</p>
+
+    <p class="ar"> 📌 الموقع ده هو معرض لأعمالي وكوداتي، وبشارك فيه كل اللي بتعلمه والمشاريع اللي بشتغل عليها في رحلتي
+        بمجال تكنولوجيا المعلومات</p>
+
+    <script>
+
+        const switchButton = document.getElementById('switchLang');
+
+
+        switchButton.addEventListener('click', () => {
+            const html = document.documentElement;
+
+
+            if (html.lang === 'en') {
+                html.lang = 'ar';
+                html.dir = 'rtl';
+                switchButton.textContent = 'English';
+
+
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.ar').forEach(el => el.style.display = 'block');
+            } else {
+                html.lang = 'en';
+                html.dir = 'ltr';
+                switchButton.textContent = 'عربي';
+
+
+                document.querySelectorAll('.ar').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.en').forEach(el => el.style.display = 'block');
+            }
+        });
+    </script>
+
+    <section class="projects">
+        <h2 class="en">My Projects</h2>
+        <h2 class="ar">مشاريعي</h2>
+
+        <img src="https://i.postimg.cc/fRt6KBCv/Screenshot-2025-12-18-003659.png" alt="photo for the project"
+            height="400" width="300" class="project-image">
+
+        <div class="project">
+            <h3 class="en">Project 1 Title</h3>
+            <p class="en">A simple login page designed for user interface experience, allowing users to enter their
+                credentials to access their account. The site uses HTML and CSS for a clean and user-friendly design.
+            </p>
+            <a class="en" href="https://khaled854.github.io/login-website/" target="_blank">View Project</a>
+
+            <h3 class="ar">عنوان المشروع 1</h3>
+            <p class="ar">
+                >موقع تسجيل دخول بسيط مصمم لتجربة واجهة المستخدم، يسمح للمستخدمين بإدخال بياناتهم للوصول إلى
+                الحساب. الموقع يستخدم HTML وCSS لتصميم واجهة نظيفة وسهلة الاستخدام.
+            </p>
+            <a class="ar" href="https://khaled854.github.io/login-website/" target="_blank">عرض المشروع</a>
+        </div>
+
+
+
+        <div class="project">
+            <h3 class="en">Project 2 Title</h3>
+            <p class="en">Al-Zawq Al-Aseel Restaurant website showcases our delicious meals with appealing images and
+                ingredient details, allowing visitors to view prices, opening hours, and contact information easily.</p>
+            <a class="en" href="https://khaled854.github.io/-/" target="_blank">View Project</a>
+
+            <h3 class="ar">عنوان المشروع 2</h3>
+            <p class="ar">موقع مطعم الذوق الأصيل يعرض أشهى وجباتنا مع صور جذابة وتفاصيل المكونات، ويتيح للزوار معرفة
+                الأسعار وأوقات العمل والتواصل معنا بسهولة.</p>
+            <a class="ar" href="https://khaled854.github.io/-/" target="_blank">عرض المشروع</a>
+        </div>
+
+
+    </section>
+
+
+
+    <footer>
+        <p class="en">Connect with me:</p>
+        <p class="ar">تواصل معي:</p>
+        <a href="https://github.com/khaled854" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/khaled-taha-0a2a41389" target="_blank">LinkedIn</a>
+    </footer>
+
+
+</body>
+
+</html>
